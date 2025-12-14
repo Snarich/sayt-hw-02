@@ -1,4 +1,173 @@
- {
+/* === ПЕРЕМЕННЫЕ И БАЗОВЫЕ НАСТРОЙКИ === */
+:root {
+    /* Цветовая схема в стиле Матрицы */
+    --matrix-green: #FFFF00;
+    --matrix-dark-green: #008f11;
+    --matrix-bg: #8f5f5f;
+    --matrix-bg-light: #1a1a1a;
+    --text-primary: #00ff41;
+    --text-secondary: #97a0ff;
+    --text-muted: #888888;
+    --accent: #ff0040;
+    --border-color: #fff20033;
+}
+
+/* Сброс стандартных стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Основные стили body */
+body {
+       font-family: 'Courier New', monospace;
+    background-color: var(--matrix-bg);
+    color: var(--text-secondary);
+    line-height: 1.6;
+    min-height: 100vh;
+    
+    /* Эффект сканлиний как у старого монитора */
+    background-image: 
+       
+        url('https://avatars.mds.yandex.net/i?id=0c1a7831ccf96d61343733d754012df0_l-12143639-images-thumbs&n=13');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Фон фиксируется при скролле */
+    
+    /* Убраны лишние свойства */
+    display: block;
+    margin: 0;
+}
+
+
+/* === СЕКЦИИ КОНТЕНТА === */
+.content-section {
+    background: var(--matrix-bg-light);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+
+.text-block {
+  background-color: #1a1a1a;       /* Цвет фона (настраиваемый) */
+  border: 2px solid #fff20033;       /* Толщина, стиль и цвет рамки (настраиваемый) */
+  padding: 20px;                   /* Отступ внутри блока, чтобы текст не прилипал к краям */
+  margin: 20px;                    /* Отступ от других элементов (по желанию) */
+  border-radius: 8px;              /* Скругление углов (опционально) */
+  font-family: Arial, sans-serif;  /* Шрифт (по желанию) */
+  color: #333;                     /* Цвет текста */
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
+.content-section h2 {
+    color: var(--matrix-green);
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border-left: 3px solid var(--matrix-green);
+}
+
+/* Сетка информации */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.info-item {
+    padding: 15px;
+    background: var(--matrix-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.info-item:hover {
+    transform: translateY(-5px);
+    border-color: var(--matrix-green);
+}
+
+/* Контейнер */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-image: ('https://avatars.mds.yandex.net/i?id=97271397e7614f7e9e962719de549820570ad96b-7000993-images-thumbs&n=13')
+}
+
+/* Эффект свечения для текста */
+@keyframes glow {
+    0%, 100% {
+        text-shadow: 
+            0 0 5px var(--matrix-green),
+            0 0 10px var(--matrix-green),
+            0 0 15px var(--matrix-dark-green);
+    }
+    50% {
+        text-shadow: 
+            0 0 10px var(--matrix-green),
+            0 0 20px var(--matrix-green),
+            0 0 30px var(--matrix-dark-green);
+    }
+}
+
+
+/* === ШАПКА САЙТА === */
+.header {
+    text-align: center;
+    padding: 40px 0;
+    background: url('https://i.ytimg.com/vi/xZWZRu50Nfc/maxresdefault.jpg');
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    
+    background-repeat: no-repeat;
+
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Навигация */
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+}
+
+.main-nav a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid var(--matrix-green);
+    border-radius: 5px;
+    background: rgba(0, 255, 65, 0.05);
+    transition: all 0.3s ease;
+}
+
+.main-nav a:hover {
+    background: var(--matrix-green);
+    color: var(--matrix-bg);
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--matrix-green);
+
+--------------------------------------
+{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
