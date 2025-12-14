@@ -1,12 +1,12 @@
 /* === ПЕРЕМЕННЫЕ И БАЗОВЫЕ НАСТРОЙКИ === */
 :root {
     /* Цветовая схема в стиле Матрицы */
-    --matrix-green: #FFFF00;
+    --matrix-green: #6d9ea5;
     --matrix-dark-green: #008f11;
     --matrix-bg: #8f5f5f;
     --matrix-bg-light: #1a1a1a;
     --text-primary: #00ff41;
-    --text-secondary: #97a0ff;
+    --text-secondary: #ccb5cf;
     --text-muted: #888888;
     --accent: #ff0040;
     --border-color: #fff20033;
@@ -42,7 +42,7 @@ body {
 
 /* === СЕКЦИИ КОНТЕНТА === */
 .content-section {
-  background: rgba(20, 20, 20, 0.75); /* замените на ваш RGB + прозрачность */
+  background: rgba(80, 80, 80, 0.75); /* замените на ваш RGB + прозрачность */
   border: 1px solid var(--border-color);
   border-radius: 10px;
   padding: 30px;
