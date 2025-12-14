@@ -206,7 +206,28 @@ body {
 .nav a:hover {
   text-decoration: underline;
 }
+______________________________________
+/* Непосещённая ссылка */
+a:link {
+  color: blue;
+}
 
+/* Посещённая ссылка */
+a:visited {
+  color: purple;
+}
+
+/* При наведении */
+a:hover {
+  color: red;
+}
+
+/* При активации (нажатии) */
+a:active {
+  color: orange;
+}
+________________________________
+    
 /* Основной контент */
 .main {
   padding: 2rem 0;
