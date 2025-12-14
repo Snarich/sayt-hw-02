@@ -42,12 +42,12 @@ body {
 
 /* === СЕКЦИИ КОНТЕНТА === */
 .content-section {
-    background: var(--matrix-bg-light);
-    border: 1px solid var(--border-color);
-    border-radius: 10px;
-    padding: 30px;
-    margin-bottom: 30px;
-    position: relative;
+  background: rgba(240, 240, 245, 0.75); /* замените на ваш RGB + прозрачность */
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 30px;
+  position: relative;
 }
 
 
